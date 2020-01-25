@@ -13,7 +13,7 @@
 	<iframe src="images/bgm-silence.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
 	
 	<audio autoplay hidden>
-		<source src="images/bgm2.0.mp3" type="audio/mpeg">
+		<source src="images/bgm.mp3" type="audio/mpeg">
 	</audio>
 </div>
 
@@ -51,7 +51,30 @@ bleep.src = "images/bgm2.0.mp3";
 <!-- Modernizr JS -->
 <script src="js/modernizr-2.6.2.min.js"></script>
 	
-
+<style> 
+		.btn2 {
+		background-color: black;
+		-webkit-border-radius: 50px;
+		border-radius: 60px;
+		border: none;
+		color: #eeeeee;
+		cursor: pointer;
+		display: inline-block;
+		font-family: sans-serif; 
+		font-size: 20px;
+		padding: 10px 10px;
+		text-align: center;
+		text-decoration: none;
+		}
+		@keyframes glowing {
+		0% { background-color: rgba(241, 78, 149, 0.8); box-shadow: 0 0 5px rgba(241, 78, 149, 0.8); }
+		50% { background-color:  rgba(241, 78, 149, 0.8); box-shadow: 0 0 20px rgba(241, 78, 149, 0.8); }
+		100% { background-color:  rgba(241, 78, 149, 0.8); box-shadow: 0 0 5px rgba(241, 78, 149, 0.8); }
+		}
+		.btn2 {
+		animation: glowing 1000ms infinite;
+		}
+	  </style>
 </head>
 	
 <body>
@@ -101,7 +124,7 @@ bleep.src = "images/bgm2.0.mp3";
 <p><a class="btn btn-default btn-sm" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTA2OTVtNGIwZ2t2cDJwajU3aXBibTY1c28gd3JpdGV0b2FiaWppdGhAbQ&tmsrc=writetoabijith%40gmail.com" target="_blank" data-key="5d3325d1b4fc4c02adad5623" data-event="5d3325d45df5c7001be55f61" data-style="3">Save the date</a></p>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://plugins.eventable.com/eventable.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'eventable-script');</script>
 	
-<p><a class="btn btn-default btn-sm" onmousedown="bleep.play()"><i class="fa fa-music" aria-hidden="true"></i></a></p>
+<p><a class="btn2" onmousedown="bleep.play()"><i class="fa fa-music" aria-hidden="true"><i class="fa fa-music" aria-hidden="true"></i></i></a></p>
 						</div>
 					</div>
 				</div>
