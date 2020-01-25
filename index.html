@@ -8,6 +8,7 @@
 <link rel="shortcut icon" href="images/favicon.ico"/>
 
 <div id="player">
+		<a href="images/bgm.mp3"></a> 
 <!--Triggering Chrome for Media Autoplay-->
 	<iframe src="images/bgm-silence.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
 	
@@ -15,6 +16,13 @@
 		<source src="images/bgm.mp3" type="audio/mpeg">
 	</audio>
 </div>
+
+<script>
+
+var bleep =  new Audio();
+bleep.src = "images/bgm2.0.mp3";
+
+</script>
 
 <title>Shirin Weds Rafeeq</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,6 +44,10 @@
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
 <!--Css-->
 <link rel="stylesheet" href="css/style.css">
+
+
+<script src="https://use.fontawesome.com/3c5501e4ec.js"></script>
+
 <!-- Modernizr JS -->
 <script src="js/modernizr-2.6.2.min.js"></script>
 	
@@ -88,7 +100,8 @@
 							
 <p><a class="btn btn-default btn-sm" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTA2OTVtNGIwZ2t2cDJwajU3aXBibTY1c28gd3JpdGV0b2FiaWppdGhAbQ&tmsrc=writetoabijith%40gmail.com" target="_blank" data-key="5d3325d1b4fc4c02adad5623" data-event="5d3325d45df5c7001be55f61" data-style="3">Save the date</a></p>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://plugins.eventable.com/eventable.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script', 'eventable-script');</script>
-						
+	
+<p><a class="btn btn-default btn-sm" onmousedown="bleep.play()"><i class="fa fa-music" aria-hidden="true"></i></a></p>
 						</div>
 					</div>
 				</div>
@@ -119,7 +132,7 @@
 						<img src="images/shirin-mod.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-
+	
 						
 
 <h3>Shirin</h3>
